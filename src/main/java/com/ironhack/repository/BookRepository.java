@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 import java.util.Optional;
 
-public interface BookRepository extends JpaRepository<Book, Integer> {
+public interface BookRepository extends JpaRepository<Book, String> {
     Optional<Book> findBookByTitle(String title);
 
     List<Book> findBookByCategory(Categories category);
